@@ -1,0 +1,30 @@
+body {
+    background-color: lightpink;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	text-transform:uppercase;
+	font-size: 60px;
+}
+.letters p {
+    text-align: center;
+    border: 4px solid hotpink;
+    border-radius: 20px;
+    background-color: lightgreen;
+    padding: 20px;
+    margin-right: 6px;
+    text-shadow: 0 0 15px white;
+    transition: 2s;
+}
+
+.letters:hover p:nth-child(even) {
+    transform: scale(0.5);
+}
+
+.letters:hover p:nth-child(odd) {
+    transform: scale(1.5);
+}
